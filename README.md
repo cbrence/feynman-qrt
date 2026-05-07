@@ -66,9 +66,9 @@ quant-research-toolkit/
 ### Installation
 
 ```bash
-git clone https://github.com/cbrence/quant-research-toolkit.git
-cd quant-research-toolkit
-pip install -r requirements.txt
+git clone https://github.com/cbrence/feynman-qrt.git
+cd feynman-qrt
+uv install -r requirements.txt
 ```
 
 Python 3.8+ required. No GPU or heavy dependencies — pure stdlib plus
