@@ -297,7 +297,7 @@ If this toolkit is useful for your research:
 @software{quant_research_toolkit,
   author  = {Colin Brence},
   title   = {Quantitative Finance Research Toolkit},
-  year    = {2025},
-  url     = {https://github.com/cbrence/quant-research-toolkit}
+  year    = {2026},
+  url     = {https://github.com/cbrence/feynman-qrt}
 }
 ```
