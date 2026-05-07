@@ -1,0 +1,4 @@
+[console_scripts]
+qrt-gaps = qrt.cli:gaps_main
+qrt-kg = qrt.cli:kg_main
+qrt-search = qrt.cli:search_main

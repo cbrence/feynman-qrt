@@ -1,0 +1,189 @@
+Metadata-Version: 2.4
+Name: quant-research-toolkit
+Version: 1.0.0
+Summary: Multi-source academic search and gap analysis for quantitative finance
+Author: Colin Brence
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: feedparser>=6.0.10
+Requires-Dist: requests>=2.31.0
+Dynamic: author
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
+
+# Quantitative Finance Research Toolkit
+
+A comprehensive toolkit for discovering research gaps and opportunities in quantitative finance using multi-source academic search, knowledge graphs, and automated gap analysis.
+
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+## 🎯 What This Does
+
+This toolkit helps quantitative researchers:
+- **Search multiple academic databases** (Semantic Scholar, arXiv, Google Scholar)
+- **Identify research gaps** using method×domain analysis
+- **Build knowledge graphs** of academic literature
+- **Track citation trends** and publication venues
+- **Find personalized research opportunities** matching your skills
+
+## 🚀 Key Features
+
+### 1. Multi-Source Academic Search with Smart Logic
+```bash
+# Search for papers at the INTERSECTION of two concepts
+qrt-search "Monte Carlo" "rough volatility" --logic AND
+
+# Search for papers about EITHER concept (broader)
+qrt-search "GPU" "CUDA" --logic OR
+```
+
+#### Understanding Search Logic (AND vs OR)
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  AND Logic (Intersection) - Find Specific Combinations          │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│   Papers about              Papers about                        │
+│   "Monte Carlo"            "rough volatility"                   │
+│   ┌──────────┐              ┌──────────┐                        │
+│   │    A     │              │    B     │                        │
+│   │   ╱ ╲    │              │   ╱ ╲    │                        │
+│   │  ╱   ╲   │              │  ╱   ╲   │                        │
+│   │ ╱  C  ╲  │──────────────│ ╱  C  ╲  │                        │
+│   │╱       ╲ │   Papers     │╱       ╲ │                        │
+│   └──────────┘   with BOTH  └──────────┘                        │
+│                     (C)                                          │
+│                                                                  │
+│  Example: "Monte Carlo" AND "rough volatility"                  │
+│  Returns: ~15 papers (focused, specific)                        │
+│  Use for: Finding research gaps                                 │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+
+┌─────────────────────────────────────────────────────────────────┐
+│  OR Logic (Union) - Broader Coverage                            │
+├─────────────────────────────────────────────────────────────────┤
+│                                                                  │
+│   Either "Monte Carlo" OR "rough volatility"                    │
+│   Returns: ~300 papers (comprehensive)                          │
+│  Use for: Comprehensive literature reviews                      │
+│                                                                  │
+└─────────────────────────────────────────────────────────────────┘
+```
+
+**When to use:**
+- **AND** = Find research gaps (narrow, specific)
+- **OR** = Comprehensive literature review (broad)
+
+### 2. Automated Gap Analysis
+```bash
+qrt-gaps analyze papers.json --min-gap 2
+
+# Output:
+# 1. GPU × Credit Risk (0 papers) - UNEXPLORED 🚨
+# 2. Bayesian × Credit (2 papers) - UNDEREXPLORED ⚠️
+```
+
+### 3. Knowledge Graph
+```bash
+qrt-kg import papers.json
+qrt-kg stats
+qrt-kg gaps
+qrt-kg trending --months 12
+```
+
+## 📦 Installation
+```bash
+# Install uv (fast Python package installer)
+curl -LsSf https://astral.sh/uv/install.sh | sh
+
+# Clone repository
+git clone https://github.com/YOUR_USERNAME/quant-research-toolkit.git
+cd quant-research-toolkit
+
+# Install dependencies
+uv pip install -r requirements.txt
+```
+
+## 🎓 Quick Start
+```bash
+# 1. Search for papers
+qrt-search "GPU acceleration" "volatility" --logic AND --output results.json
+
+# 2. Build knowledge graph
+qrt-kg import results.json
+
+# 3. Find gaps
+qrt-kg gaps
+
+# 4. Get personalized recommendations
+qrt-gaps personalize results.json --interactive
+```
+
+## 📚 Command Reference
+
+### qrt-search
+```bash
+qrt-search [phrases...] --logic {AND|OR} [options]
+
+Options:
+  --logic {AND,OR}      How to combine phrases (default: AND)
+                        AND = all phrases must appear
+                        OR  = any phrase can appear
+  --sources [...]       semantic_scholar, arxiv, google_scholar
+  --year-min YEAR       Minimum publication year
+  --min-citations N     Minimum citation count
+  --output FILE         Save results
+```
+
+### qrt-kg
+```bash
+qrt-kg COMMAND [options]
+
+Commands:
+  import FILE    Import papers into knowledge graph
+  stats          Show graph statistics
+  gaps           Find research gaps
+  trending       Show trending topics
+```
+
+### qrt-gaps
+```bash
+qrt-gaps personalize FILE [options]
+
+Options:
+  --strengths METHOD [...]    Your method expertise
+  --interests DOMAIN [...]    Your domain interests
+  --interactive               Interactive mode
+```
+
+## 🔬 Methodology
+
+1. **Multi-Source Aggregation** - Combines Semantic Scholar + arXiv + Google Scholar
+2. **Semantic Analysis** - Extracts methods and domains using taxonomy
+3. **Co-occurrence Matrix** - Tracks method×domain combinations
+4. **Gap Scoring** - Identifies underexplored areas
+5. **Personalization** - Matches gaps to your skills
+
+## 📄 License
+
+MIT License - see [LICENSE](LICENSE)
+
+## 📧 Contact
+
+- GitHub Issues: [Report bugs](https://github.com/YOUR_USERNAME/quant-research-toolkit/issues)
+- Author: Colin Brence
+
+## 📖 Citation
+```bibtex
+@software{quant_research_toolkit,
+  author = {Colin Brennan},
+  title = {Quantitative Finance Research Toolkit},
+  year = {2025},
+  url = {https://github.com/YOUR_USERNAME/quant-research-toolkit}
+}
+```

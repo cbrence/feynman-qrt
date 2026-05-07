@@ -1,0 +1,320 @@
+{
+  "search_date": "2026-01-23T17:52:02.167652",
+  "num_papers": 10,
+  "sources": [
+    "semantic_scholar"
+  ],
+  "papers": [
+    {
+      "title": "GPU Acceleration of Monte Carlo Tallies on Unstructured Meshes in OpenMC with PUMI-Tally",
+      "abstract": "Unstructured mesh tallies are a bottleneck in Monte Carlo neutral particle transport simulations of fusion reactors. This paper introduces the PUMI-Tally library that takes advantage of mesh adjacency information to accelerate these tallies on CPUs and GPUs. For a fixed source simulation using track-length tallies, we achieved a speed-up of 19.7X on an NVIDIA A100, and 9.2X using OpenMP on 128 threads of two AMD EPYC 7763 CPUs on NERSC Perlmutter. On the Empire AI alpha system, we achieved a speed-up of 20X using an NVIDIA H100 and 96 threads of an Intel Xenon 8568Y+. Our method showed better scaling with number of particles and number of elements. Additionally, we observed a 199X reduction in the number of allocations during initialization and the first three iterations, with a similar overall memory consumption. And, our hybrid CPU/GPU method demonstrated a 6.69X improvement in the energy consumption over the current approach.",
+      "authors": [
+        "Fuad Hasan",
+        "Cameron W. Smith",
+        "M. Shephard",
+        "R. M. Churchill",
+        "G. Wilkie",
+        "Paul K. Romano",
+        "P. Shriwise",
+        "Jacob Merson"
+      ],
+      "year": 2025,
+      "citation_count": 1,
+      "venue": "arXiv.org",
+      "venue_details": {
+        "id": "1901e811-ee72-4b20-8f7e-de08cd395a10",
+        "name": "arXiv.org",
+        "alternate_names": [
+          "ArXiv"
+        ],
+        "issn": "2331-8422",
+        "url": "https://arxiv.org"
+      },
+      "doi": "10.48550/arXiv.2504.19048",
+      "arxiv_id": "2504.19048",
+      "semantic_scholar_id": "6c23ce44159603cf4929c63317dcbc309fbb2f04",
+      "url": "https://www.semanticscholar.org/paper/6c23ce44159603cf4929c63317dcbc309fbb2f04",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158402"
+    },
+    {
+      "title": "ClAssical Trajectory Calculation Direct Simulation Monte Carlo: GPU acceleration and three body collisions",
+      "abstract": null,
+      "authors": [
+        "P. Norman",
+        "T. Schwartzentruber"
+      ],
+      "year": 2013,
+      "citation_count": 9,
+      "venue": "",
+      "venue_details": null,
+      "doi": "10.2514/6.2013-1200",
+      "arxiv_id": null,
+      "semantic_scholar_id": "564587bbb46f56ffbb044b5c39625a264f788d4e",
+      "url": "https://www.semanticscholar.org/paper/564587bbb46f56ffbb044b5c39625a264f788d4e",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158422"
+    },
+    {
+      "title": "REAL-TIME PROTON AND CARBON ION MONTE CARLO DOSE CALCULATION THROUGH GPU-ACCELERATION AND DL-BASED DENOISING ALGORITHMS",
+      "abstract": null,
+      "authors": [
+        "Xie George Xu",
+        "Shijun Li",
+        "Yankui Chang",
+        "Xuanhe Wang",
+        "Qing Zhang",
+        "Ripeng Wang",
+        "Jingfang Zhao",
+        "Xi Pei"
+      ],
+      "year": 2025,
+      "citation_count": 0,
+      "venue": "International Journal of Particle Therapy",
+      "venue_details": {
+        "id": "0bc6a8cd-26b3-4f25-aa50-ef11c42d3bad",
+        "name": "International Journal of Particle Therapy",
+        "type": "journal",
+        "alternate_names": [
+          "Int J Part Ther"
+        ],
+        "issn": "2331-5180",
+        "url": "https://theijpt.org/"
+      },
+      "doi": "10.1016/j.ijpt.2025.101184",
+      "arxiv_id": null,
+      "semantic_scholar_id": "027f431458e689d950fae361c4e80ada66ba40d0",
+      "url": "https://www.semanticscholar.org/paper/027f431458e689d950fae361c4e80ada66ba40d0",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158427"
+    },
+    {
+      "title": "GPU Acceleration for Markov Chain Monte Carlo Sampling",
+      "abstract": "In areas such as molecular biology, computer vision, and natural language processing, graphs are commonly used to represent the structure of probability distributions (or their equivalents) that are too large to consider explicitly. In these settings, we are commonly interested in sampling from the distribution for various inference tasks. A typical approach is the use of Markov Chain Monte Carlo (MCMC) methods. The classic, uniprocessor, approach to MCMC still results in poor performance. While parallel approaches on CPU or GPU devices have been proposed, they are often designed for specific tasks and/or do not effectively utilize the inter-device communication capabilities of GPUs. We propose a novel, GPU-parallelizable MCMC method for this setting. Our approach makes use of a partitioning approach to divide the graph and dispatch the resulting sub-graphs to GPUs. Using the communication capabilities of GPUs (e.g., NVLink), we give a way to coordinate information between the computations over adjacent subgraphs and subsequently merge them. This approach takes advantage of the high degree of GPU parallelism while maintaining the generality of MCMC sampling. We demonstrate the performance of our approach for estimating protein conformational stability. Over four different benchmarks and two GPU platforms we show that our method achieves up to a 400% speedup over an adaptive Monte Carlo sampling method.",
+      "authors": [
+        "Jiarui Li",
+        "Samuel J Landry",
+        "Ramgopal R. Mettu"
+      ],
+      "year": 2024,
+      "citation_count": 3,
+      "venue": "International Conference on AI-ML-Systems",
+      "venue_details": {
+        "id": "5809a76c-8432-4338-99fa-f74ba0259d6e",
+        "name": "International Conference on AI-ML-Systems",
+        "type": "conference",
+        "alternate_names": [
+          "AIMLSystems",
+          "Int Conf Ai-ml-systems"
+        ]
+      },
+      "doi": "10.1145/3703412.3703428",
+      "arxiv_id": null,
+      "semantic_scholar_id": "49254b68f6b9235c7c80c4bc84dbfa6da8975cb7",
+      "url": "https://www.semanticscholar.org/paper/49254b68f6b9235c7c80c4bc84dbfa6da8975cb7",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158434"
+    },
+    {
+      "title": "Optimizing BIT1, a Particle-in-Cell Monte Carlo Code, with OpenMP/OpenACC and GPU Acceleration",
+      "abstract": null,
+      "authors": [
+        "Jeremy J. Williams",
+        "Felix Liu",
+        "D. Tskhakaya",
+        "Stefan Costea",
+        "A. Podolnik",
+        "Stefano Markidis"
+      ],
+      "year": 2024,
+      "citation_count": 1,
+      "venue": "International Conference on Conceptual Structures",
+      "venue_details": {
+        "id": "46990654-eb6c-4674-96bc-ba905dab2a86",
+        "name": "International Conference on Conceptual Structures",
+        "type": "conference",
+        "alternate_names": [
+          "IEEE Int Conf Commun Syst",
+          "International Conference on Computational Science",
+          "ICCS",
+          "International Conference on Curves and Surfaces",
+          "Int Conf Concept Struct",
+          "Int Conf Curve Surf",
+          "IEEE International Conference on Complex Systems",
+          "IEEE International Conference on Communication Systems",
+          "Int Conf Comput Sci",
+          "IEEE Int Conf Complex Syst"
+        ],
+        "url": "http://www.wikicfp.com/cfp/program?id=1321",
+        "alternate_urls": [
+          "https://link.springer.com/conference/iccs-computsci"
+        ]
+      },
+      "doi": "10.48550/arXiv.2404.10270",
+      "arxiv_id": null,
+      "semantic_scholar_id": "1e4aaf7b908a092a6a46ec91b26f8dd59cdba824",
+      "url": "https://www.semanticscholar.org/paper/1e4aaf7b908a092a6a46ec91b26f8dd59cdba824",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158439"
+    },
+    {
+      "title": "Toward Portable GPU Acceleration of the OpenMC Monte Carlo Particle Transport Code",
+      "abstract": null,
+      "authors": [
+        "John R. Tramm",
+        "Paul Romano",
+        "Johannes Doerfert",
+        "Amanda Lund",
+        "Patrick Shriwise",
+        "Andrew Siegel",
+        "Gavin Ridley",
+        "Andrew Pastrello"
+      ],
+      "year": 2022,
+      "citation_count": 22,
+      "venue": "International Conference on Physics of Reactors 2022 (PHYSOR 2022)",
+      "venue_details": null,
+      "doi": "10.13182/physor22-37847",
+      "arxiv_id": null,
+      "semantic_scholar_id": "572608f442ca78eeb7c0f6d2fb6fa2d64aef709c",
+      "url": "https://www.semanticscholar.org/paper/572608f442ca78eeb7c0f6d2fb6fa2d64aef709c",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158443"
+    },
+    {
+      "title": "GPU Acceleration of Monte Carlo Tree Search Algorithm for Amazon chess and Its Evaluation Function",
+      "abstract": "The evaluation function is a very important part of the Monte Carlo Tree Search (MCTS) algorithm for Amazon chess. This paper introduces the principle of Monte Carlo Tree Search algorithm, and realizes GPU accelerated calculation of Amazon chess situation's evaluation function, based on CUDA computing platform. Using the CPU code and CUDA code, two experiments were carried out to evaluate the function calculation accuracy and the effect of kernel function call parameters on the GPU acceleration performance. The results show that the evaluation function is feasible and effective for GPU acceleration, and the speedup ratio of GPU to CPU reaches 20.0.",
+      "authors": [
+        "Yikai Sun",
+        "Dong Yuan",
+        "Ming Gao",
+        "Penghui Zhu"
+      ],
+      "year": 2022,
+      "citation_count": 0,
+      "venue": "International Conferences on Artificial Intelligence, Information Processing and Cloud Computing",
+      "venue_details": {
+        "id": "2dacb8db-ce48-46fd-bd2a-fe07bf87cb30",
+        "name": "International Conferences on Artificial Intelligence, Information Processing and Cloud Computing",
+        "type": "conference",
+        "alternate_names": [
+          "AIIPCC",
+          "Int Conf Artif Intell Inf Process Cloud Comput"
+        ]
+      },
+      "doi": "10.1109/AIIPCC57291.2022.00098",
+      "arxiv_id": null,
+      "semantic_scholar_id": "319f04472632d028d7bf1b4bfffaac3f8e40033f",
+      "url": "https://www.semanticscholar.org/paper/319f04472632d028d7bf1b4bfffaac3f8e40033f",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158446"
+    },
+    {
+      "title": "jVMC: Versatile and performant variational Monte Carlo leveraging automated differentiation and GPU acceleration",
+      "abstract": "The introduction of Neural Quantum States (NQS) has recently given a new twist to variational Monte Carlo (VMC). The ability to systematically reduce the bias of the wave function ansatz renders the approach widely applicable. However, performant implementations are crucial to reach the numerical state of the art. Here, we present a Python codebase that supports arbitrary NQS architectures and model Hamiltonians. Additionally leveraging automatic differentiation, just-in-time compilation to accelerators, and distributed computing, it is designed to facilitate the composition of efficient NQS algorithms.",
+      "authors": [
+        "M. Schmitt",
+        "M. Reh"
+      ],
+      "year": 2021,
+      "citation_count": 17,
+      "venue": "SciPost Physics Codebases",
+      "venue_details": null,
+      "doi": "10.21468/SciPostPhysCodeb.2",
+      "arxiv_id": "2108.03409",
+      "semantic_scholar_id": "5ae9c4a289b03334ed8499f94b1e2009f3f9db1c",
+      "url": "https://www.semanticscholar.org/paper/5ae9c4a289b03334ed8499f94b1e2009f3f9db1c",
+      "pdf_url": "https://scipost.org/10.21468/SciPostPhysCodeb.2/pdf",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158453"
+    },
+    {
+      "title": "GPU acceleration of Monte Carlo simulations for polarized photon scattering in anisotropic turbid media.",
+      "abstract": null,
+      "authors": [
+        "Pengcheng Li",
+        "Celong Liu",
+        "Xianpeng Li",
+        "Honghui He",
+        "Hui Ma"
+      ],
+      "year": 2016,
+      "citation_count": 31,
+      "venue": "Applied Optics",
+      "venue_details": {
+        "id": "47464297-4c88-44d5-9112-53a865e99be5",
+        "name": "Applied Optics",
+        "type": "journal",
+        "alternate_names": [
+          "Appl Opt"
+        ],
+        "issn": "1559-128X",
+        "alternate_issns": [
+          "0003-6935",
+          "1539-4522",
+          "2155-3165"
+        ],
+        "url": "http://www.opticsinfobase.org/",
+        "alternate_urls": [
+          "https://www.osapublishing.org/ao/abstract.cfm?uri=ao-57-1-A157",
+          "http://www.opticsinfobase.org/ao/",
+          "http://ao.osa.org/journal/ao/about.cfm"
+        ]
+      },
+      "doi": "10.1364/AO.55.007468",
+      "arxiv_id": null,
+      "semantic_scholar_id": "bdf96083f78f37296a508c5127b725f2deaa5111",
+      "url": "https://www.semanticscholar.org/paper/bdf96083f78f37296a508c5127b725f2deaa5111",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158458"
+    },
+    {
+      "title": "Online 3D LIDAR Monte Carlo localization with GPU acceleration",
+      "abstract": null,
+      "authors": [
+        "J. Będkowski",
+        "Timo Röhling"
+      ],
+      "year": 2017,
+      "citation_count": 13,
+      "venue": "Industrial robot",
+      "venue_details": {
+        "id": "34926d04-db90-43ec-8891-1cae74c17a1e",
+        "name": "Industrial robot",
+        "type": "journal",
+        "alternate_names": [
+          "Industrial Robot-an International Journal",
+          "Ind robot",
+          "Ind Robot Int J"
+        ],
+        "issn": "0143-991X",
+        "url": "https://www.emerald.com/insight/publication/issn/0143-991x"
+      },
+      "doi": "10.1108/IR-11-2016-0309",
+      "arxiv_id": null,
+      "semantic_scholar_id": "39c38a7a069896fba09e611ce02fa9dd34a73fe6",
+      "url": "https://www.semanticscholar.org/paper/39c38a7a069896fba09e611ce02fa9dd34a73fe6",
+      "pdf_url": "",
+      "source_db": "Semantic Scholar",
+      "source": "semantic_scholar",
+      "added_at": "2026-01-23T17:52:01.158460"
+    }
+  ]
+}
